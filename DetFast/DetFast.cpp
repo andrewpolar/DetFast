@@ -23,7 +23,7 @@
 //targets are their determinants. Accuracy metric is Pearson correlation coefficient.
 //Typical processing time for 16 cores laptop. 
 //1. 4 by 4, 16 features, 100'000 records, termination at Pearson > 0.97, near 1 second.
-//2. 5 by 5, 25 features, 10'000'000 records, termination at Pearson > 0.95, from 200 to 250 seconds.
+//2. 5 by 5, 25 features, 10'000'000 records, termination at Pearson > 0.95, from 100 to 250 seconds.
 
 #include <iostream>
 #include <random>
@@ -241,3 +241,4 @@ int main() {
     printf("Processing started ...\n");
     Training();
 }
+
