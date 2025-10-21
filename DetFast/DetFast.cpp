@@ -25,6 +25,33 @@
 //1. 4 by 4, 16 features, 100'000 records, termination at Pearson > 0.97, near 1 second.
 //2. 5 by 5, 25 features, 10'000'000 records, termination at Pearson > 0.95, from 100 to 250 seconds.
 
+//Makefile
+//# Compiler and flags
+//CXX = g++
+//CXXFLAGS = -O2 -std=c++17 -Wall
+//
+//# Target name (final executable)
+//TARGET = DetFast
+//
+//# Source files
+//SRCS = DetFast.cpp
+//
+//# Object files
+//OBJS = $(SRCS:.cpp=.o)
+//
+//# Default rule
+//$(TARGET): $(OBJS)
+//	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
+//
+//# Compile .cpp to .o
+//%.o: %.cpp
+//	$(CXX) $(CXXFLAGS) -c $< -o $@
+//
+//# Clean rule
+//clean:
+//	rm -f $(OBJS) $(TARGET)
+
+
 #include <iostream>
 #include <random>
 #include <thread>
@@ -241,4 +268,5 @@ int main() {
     printf("Processing started ...\n");
     Training();
 }
+
 
